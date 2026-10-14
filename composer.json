@@ -29,9 +29,7 @@
         }
     },
     "require": {
-        "php": ">=8.2",
-        "stougeiro/database-contract": "^0.1.0",
-        "stougeiro/event-contract": "^1.0"
+        "php": ">=8.2"
     },
     "autoload-dev": {
         "psr-4": {

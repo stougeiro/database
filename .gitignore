@@ -21,8 +21,9 @@ composer-cache/
 .DS_Store
 Thumbs.db
 
-# PHPUnit
+# PHPUnit / Pest
 .phpunit.result.cache
+.phpunit.cache/
 
 # PHPStan / Psalm
 .phpstan/
