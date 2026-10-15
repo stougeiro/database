@@ -5,6 +5,9 @@
 /vendor/
 composer.lock
 
+# OpenCode
+.opencode/
+
 # Composer cache (opcional, mas útil)
 .cache/
 composer-cache/
