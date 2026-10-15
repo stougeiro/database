@@ -29,7 +29,8 @@
         }
     },
     "require": {
-        "php": ">=8.2"
+        "php": ">=8.2",
+        "stougeiro/database-contract": "^0.4.0"
     },
     "autoload-dev": {
         "psr-4": {
