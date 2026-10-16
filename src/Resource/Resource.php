@@ -18,7 +18,10 @@
      */
     final class Resource implements DatabaseResourceInterface, ResourceMetadataAwareInterface
     {
+        /** @var ResourceMetadataInterface
+         */
         private ResourceMetadataInterface $meta;
+
 
         /**
          * @param string $name

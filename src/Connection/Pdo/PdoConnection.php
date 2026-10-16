@@ -1,9 +1,10 @@
 <?php declare(strict_types=1);
 
-    namespace STDW\Database\Driver\Pdo;
+    namespace STDW\Database\Connection\Pdo;
 
     use PDO;
     use PDOException;
+    use STDW\Database\Connection\Pdo\Spec\PdoConnectionInterface;
     use STDW\Database\Exception\ConnectionException;
 
 

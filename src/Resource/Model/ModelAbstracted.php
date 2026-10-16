@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-    namespace STDW\Database\Model;
+    namespace STDW\Database\Resource\Model;
 
     use STDW\Contract\Database\Driver\Capability\AggregationInterface;
     use STDW\Contract\Database\Driver\Capability\BatchInterface;
@@ -14,10 +14,10 @@
     use STDW\Contract\Database\QueryTree\Types\OrderDirection;
     use STDW\Contract\Database\Resource\DatabaseResourceInterface;
     use STDW\Contract\Database\Resource\ResourceMetadataInterface;
-    use STDW\Database\Builder\FilterBuilder;
-    use STDW\Database\Builder\OrderBuilder;
-    use STDW\Database\Builder\PaginationBuilder;
-    use STDW\Database\Builder\QueryTreeTranslator;
+    use STDW\Database\QueryTree\Builder\FilterBuilder;
+    use STDW\Database\QueryTree\Builder\OrderBuilder;
+    use STDW\Database\QueryTree\Builder\PaginationBuilder;
+    use STDW\Database\QueryTree\Builder\QueryTreeTranslator;
     use STDW\Database\Exception\InvalidConfigException;
     use STDW\Database\Exception\UnsupportedCapabilityException;
     use STDW\Database\Manager\DatabaseManager;
@@ -57,6 +57,8 @@
          */
         protected ?ResourceMetadataInterface $metadata = null;
 
+        /** @var null|DatabaseDriverInterface
+         */
         private ?DatabaseDriverInterface $driver = null;
 
 

@@ -30,7 +30,7 @@
 
             foreach ($nodes as $node) {
                 if (
-                    $node instanceof ConditionNodeInterface
+                       $node instanceof ConditionNodeInterface
                     || $node instanceof LogicNodeInterface
                     || $node instanceof GroupNodeInterface
                 ) {

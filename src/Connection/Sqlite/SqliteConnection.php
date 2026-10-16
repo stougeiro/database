@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-    namespace STDW\Database\Driver\Sql\Sqlite;
+    namespace STDW\Database\Connection\Sqlite;
 
-    use STDW\Database\Driver\Pdo\PdoConnection;
+    use STDW\Database\Connection\Pdo\PdoConnection;
 
 
     /**

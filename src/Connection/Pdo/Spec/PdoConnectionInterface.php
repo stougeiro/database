@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-    namespace STDW\Database\Driver\Pdo;
+    namespace STDW\Database\Connection\Pdo\Spec;
 
     use PDO;
     use STDW\Contract\Database\Connection\DatabaseConnectionInterface;

@@ -23,6 +23,7 @@
          */
         private array $list;
 
+
         /**
          * @param string $column
          * @param ConditionOperator $operator
@@ -42,6 +43,7 @@
                 ConditionOperator::IsNull, ConditionOperator::IsNotNull => [],
                 ConditionOperator::In, ConditionOperator::NotIn => self::assertList($column, $value, 1, null),
                 ConditionOperator::Between, ConditionOperator::NotBetween => self::assertList($column, $value, 2, 2),
+
                 default => self::assertSingle($column, $value),
             };
         }
@@ -81,6 +83,7 @@
                 ConditionOperator::In, ConditionOperator::NotIn,
                 ConditionOperator::Between, ConditionOperator::NotBetween,
                 ConditionOperator::IsNull, ConditionOperator::IsNotNull => false,
+
                 default => true,
             };
         }

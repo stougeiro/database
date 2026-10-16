@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-    namespace STDW\Database\Driver\Sql\Sqlite;
+    namespace STDW\Database\Driver\Sqlite;
 
     use PDOException;
     use STDW\Contract\Database\Driver\Capability\AggregationInterface;
@@ -15,6 +15,7 @@
     use STDW\Contract\Database\Resource\DatabaseResourceInterface;
     use STDW\Contract\Database\Resource\ResourceMetadataAwareInterface;
     use STDW\Contract\Database\Result\ResultInterface;
+    use STDW\Database\Connection\Sqlite\SqliteConnection;
     use STDW\Database\Driver\Capabilities;
     use STDW\Database\Driver\Sql\Conditions;
     use STDW\Database\Driver\Sql\SqlDriver;

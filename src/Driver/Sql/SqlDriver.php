@@ -13,7 +13,7 @@
     use STDW\Contract\Database\QueryTree\Types\OrderDirection;
     use STDW\Contract\Database\Resource\DatabaseResourceInterface;
     use STDW\Contract\Database\Result\ResultInterface;
-    use STDW\Database\Driver\Pdo\PdoConnectionInterface;
+    use STDW\Database\Connection\Pdo\Spec\PdoConnectionInterface;
     use STDW\Database\Exception\DriverException;
     use STDW\Database\Exception\QueryException;
     use STDW\Database\Result\Result;

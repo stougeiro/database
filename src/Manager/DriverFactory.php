@@ -5,8 +5,8 @@
     use STDW\Contract\Database\Connection\DatabaseConnectionInterface;
     use STDW\Contract\Database\Driver\DatabaseDriverInterface;
     use STDW\Contract\Database\Manager\DriverFactoryInterface;
-    use STDW\Database\Driver\Sql\Sqlite\SqliteConnection;
-    use STDW\Database\Driver\Sql\Sqlite\SqliteDriver;
+    use STDW\Database\Connection\Sqlite\SqliteConnection;
+    use STDW\Database\Driver\Sqlite\SqliteDriver;
     use STDW\Database\Exception\ManagerException;
 
 

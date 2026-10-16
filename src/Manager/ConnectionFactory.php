@@ -4,8 +4,8 @@
 
     use STDW\Contract\Database\Connection\DatabaseConnectionInterface;
     use STDW\Contract\Database\Manager\ConnectionFactoryInterface;
-    use STDW\Database\Driver\Sql\Sqlite\SqliteConfig;
-    use STDW\Database\Driver\Sql\Sqlite\SqliteConnection;
+    use STDW\Database\Connection\Sqlite\SqliteConfig;
+    use STDW\Database\Connection\Sqlite\SqliteConnection;
     use STDW\Database\Exception\InvalidConfigException;
     use STDW\Database\Exception\ManagerException;
 

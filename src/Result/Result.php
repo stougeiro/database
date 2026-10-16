@@ -3,6 +3,7 @@
     namespace STDW\Database\Result;
 
     use STDW\Contract\Database\Result\ResultInterface;
+    use STDW\Database\Result\Spec\ResultFactoryTrait;
 
 
     /**
@@ -19,37 +20,19 @@
      */
     final readonly class Result implements ResultInterface
     {
+        use ResultFactoryTrait;
+
+
         /**
          * @param null|array<int|string, mixed>|object $data
          * @param int $count
          * @param bool $valid
          */
-        private function __construct(
+        public function __construct(
             private null|array|object $data,
             private int $count,
             private bool $valid,
         ) { }
-
-
-        /**
-         * @param null|array<int|string, mixed>|object $data
-         * @param int $count
-         * @return self
-         */
-        public static function make(null|array|object $data, int $count): self
-        {
-            return new self($data, $count, true);
-        }
-
-        /**
-         * @param null|array<int|string, mixed>|object $data
-         * @param int $count
-         * @return self
-         */
-        public static function invalid(null|array|object $data = null, int $count = 0): self
-        {
-            return new self($data, $count, false);
-        }
 
 
         /** @return null|array<int|string, mixed>|object

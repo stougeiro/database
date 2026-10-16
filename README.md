@@ -88,7 +88,7 @@ $driver = $manager->driver(); // SqliteDriver over the "default" connection
 ### Model
 
 ```php
-use STDW\Database\Model\ModelAbstracted;
+use STDW\Database\Resource\Model\ModelAbstracted;
 
 final class User extends ModelAbstracted
 {
